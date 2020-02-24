@@ -1,3 +1,5 @@
+'''Give the input expression as a string and it'll ask for required valued itself'''
+from sympy import *
 def error(exp):
     ex = sympify(exp)
 
