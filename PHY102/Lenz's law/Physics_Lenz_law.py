@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-'''Try not to alter the code and run the program as it is.'''
-
 import numpy as np
 from sympy import *
 import matplotlib.pyplot as plt
@@ -36,7 +29,7 @@ x = tval('freefall.csv')
 y = voltage('freefall.csv')
 
 
-# In[2]:
+
 
 
 # Mean and Standard deviation from an array
@@ -93,14 +86,6 @@ def error(exp):
         
     return sqrt(sum(diff_sq))
         
-        
-    
- 
-
-
-# In[3]:
-
-
 p1_n = []
 p1_s = []
 p2_n = []
@@ -152,9 +137,6 @@ for i in p4_n:
     l4 += x[i]/len(p4_n)
 
 
-# In[4]:
-
-
 '''Position v/s time graph of a free falling magnet'''
 
 
@@ -177,8 +159,6 @@ plt.grid()
 plt.show()
 
 
-# In[5]:
-
 
 plt.plot(x,y,'m-',label='Voltage v/s Time')
 plt.title('Voltage v/s time graph in free fall')
@@ -188,8 +168,6 @@ plt.legend()
 plt.grid()
 plt.show()
 
-
-# In[6]:
 
 
 '''B v/s 1/r^(3) graph'''
@@ -212,8 +190,6 @@ plt.grid()
 plt.show()
 
 
-# In[7]:
-
 
 x_p = tval('pipe.csv')
 y_p = voltage('pipe.csv')
@@ -225,8 +201,6 @@ plt.grid()
 plt.legend()
 plt.show()
 
-
-# In[8]:
 
 
 p1_n = []
@@ -280,7 +254,6 @@ for i in p4_n:
     l4 += x_p[i]/len(p4_n)
 
 
-# In[9]:
 '''Position v/s time graph for magnet falling through the metal pipe'''
 
 k = np.array([0,20.3,21.2+20.3,21.2+20.3+20.1])*10**(-2)
@@ -304,13 +277,11 @@ plt.grid()
 plt.show()
 
 
-# In[3]:
 
 
 error('(65*m*g*a**4)/(45*(pi**2)*tau*v*(3.936*10**(-7))**2)')   #the expression for conductivity
 
 
-# In[ ]:
 
 
 
