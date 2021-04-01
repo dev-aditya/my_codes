@@ -11,7 +11,6 @@ import matplotlib
 matplotlib.style.use('seaborn-dark')
 #matplotlib.style.available
 
-
 # %%
 def exp_plot(N0, array, rates):
     
